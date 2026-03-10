@@ -6,15 +6,15 @@ Assemblers: None.
 OS: Ubuntu.
 
 General project plan:
-    1. Manual deployment on tech stack above on Ubuntu.
-    2. Clean separation between user and admin interfaces.
-        2.1 Ensure no availability to admin address for 3rd faces.
-    3. Nginx configuration and reusable snippets in /nginx/snippets/
-    4. Development of 'security-check.sh' - a custom shell script for security risk assessment.
-    5. Monitoring using Prometheus and Graphana(integrating Node Exporter and Nginx VTS Exporter).
-    6. Systemd configure via custom unit files. 
-        6.1 Auto-restart policies for various failure cases.
-        6.2 Setting resource limits and depends.
+1. Manual deployment on tech stack above on Ubuntu.
+2. Clean separation between user and admin interfaces.
+    2.1 Ensure no availability to admin address for 3rd faces.
+3. Nginx configuration and reusable snippets in /nginx/snippets/
+4. Development of 'security-check.sh' - a custom shell script for security risk assessment.
+5. Monitoring using Prometheus and Graphana(integrating Node Exporter and Nginx VTS Exporter).
+6. Systemd configure via custom unit files. 
+    6.1 Auto-restart policies for various failure cases.
+    6.2 Setting resource limits and depends.
 
 Nginx configuration plan:
     1. Use 'include' directive, for granular location management.
