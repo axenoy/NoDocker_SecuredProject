@@ -1,5 +1,9 @@
 Project Overview:
-    This project focuses on the manual deployment and securing of a web server without containerization(No Docker). The goal is to demonstrate deep expertise in System administration, DevOps and DevSecOps by building a secured and robust "Bare metal" infrastructure from scratch.
+    This project focuses on the manual deployment and securing of a web server without containerization(No Docker). The goal is to demonstrate deep expertise in System administration, DevOps and DevSecOps by building a secured and robust "Bare metal" infrastructure.
+
+**Attribution:** Big part of backend logic based on [this Habr article](https://habr.com/ru/companies/otus/articles/828684/).
+
+**Attention:** You will see some files, that should not be in production reposiories. Read the documentation in /docs directory.
 
 * Tech Stack: JavaScript, PostgreSQL, Nginx.
 * Assemblers: None.

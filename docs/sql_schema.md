@@ -1,0 +1,1 @@
+Just description for initialization how DB should look like 
