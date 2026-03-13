@@ -7,4 +7,7 @@ You will see the file .env int that project, BUT this file should not be in the 
 This config file sets up the PostgreSQL connection using env variables.
 
 ### src/server.js
-This config file makes testing request to make sure, that connection with database is established. 
+This config file is app's entry point.
+
+### routes/health.js
+Route, the logic of health check
