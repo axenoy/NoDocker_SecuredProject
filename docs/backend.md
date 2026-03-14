@@ -6,8 +6,23 @@ You will see the file .env int that project, BUT this file should not be in the 
 ### src/db/postres.js
 This config file sets up the PostgreSQL connection using env variables.
 
-### src/server.js
+### ./server.js
 This config file is app's entry point.
 
 ### routes/health.js
-Route, the logic of health check
+This config file is the database health check.
+
+### routes/dbroutes.js
+This config file sends HTTP-requets to controller, then controller file works with DB.
+
+### controllers/userController.js
+Operation logic with DB, using /db/postgres.js file.
+
+### middleware/validateUser.js
+The middleware file that check the correctness of user input data.
+
+### middleware/errorHandler.js
+
+
+### src/models/userModel.js
+The description of tables and structure

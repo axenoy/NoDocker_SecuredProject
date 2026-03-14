@@ -3,11 +3,11 @@ const pool = require('../db/postgres')
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res) => { // async function, we do not need wait for response for continue the work.
     try {
-        const result = await pool.query('SELECT NOW()');
+        const result = await pool.query('SELECT NOW()'); // Wait for response, however Node.js serves another request, but not in this project :)
 
-        res.json({
+        res.json({ // Express give JSON output.
             status: 'ok',
             database_time: result.rows[0].now
         });
@@ -19,4 +19,4 @@ router.get('/', async (req, res) => {
 
 });
 
-module.exports = router;
+module.exports = router; // export router for server.js usage
