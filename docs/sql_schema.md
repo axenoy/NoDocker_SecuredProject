@@ -1,1 +1,4 @@
-Just description for initialization how DB should look like 
+# SQL schema
+
+### sql/schema.sql
+SQL schema used to initialize the database structure (tables, constraints, etc).

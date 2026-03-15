@@ -3,7 +3,7 @@ Project Overview:
 
 **Attribution:** Big part of backend logic based on [this Habr article](https://habr.com/ru/companies/otus/articles/828684/).
 
-**Attention:** You will see some files, that should not be in production reposiories. Read the documentation in /docs directory.
+**Attention:** Some files are included for demonstration purposes and should not be present in production repositories. See the docs directory for more information.
 
 * Tech Stack: JavaScript, PostgreSQL, Nginx.
 * Assemblers: None.
