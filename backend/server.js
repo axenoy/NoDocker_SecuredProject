@@ -10,6 +10,7 @@ const errorHandler = require('./middleware/errorHandler');
 
 // app = HTTP server + routes + middleware.
 const app = express(); // Create an object of Express app.
+app.set('trust proxy', true); // Trust nginx proxy
 
 app.use(express.json());
 

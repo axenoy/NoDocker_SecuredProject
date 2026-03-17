@@ -11,7 +11,7 @@ Important: This repository is intended as a GUIDE PROJECT, therefore the .env fi
 Configuration file responsible for setting up the PostgreSQL connection using environment variables.
 
 ### server.js
-Application entry point. Initializes the server, loads middleware and registers routes.
+Application entry point. Initializes the server, trust nginx proxy, loads middleware and registers routes.
 
 ### src/routes/health.js
 Route used for database health checks.
