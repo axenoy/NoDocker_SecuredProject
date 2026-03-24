@@ -14,6 +14,14 @@ app.set('trust proxy', true); // Trust nginx proxy
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('OK');
+});
+
+app.get('/api', (req, res) => {
+  res.json({ message: 'API works' });
+});
+
 // Connecting routes
 app.use('/health', healthRoute);
 app.use('/api', dbRoute);
