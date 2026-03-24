@@ -1,32 +1,38 @@
 # ATTENTION:
 I used Ubuntu 24.04.3 LTS, data package manager may be different, all depends on your linux distibution. 
 
-Make sure, that Git installed on your machine.
+Make sure, that Git installed on your machine:
 * 'sudo apt update'
 * 'sudo apt install git -y'
 * 'git --version'
   
-Copy that project
+Copy that project:
 * cd ~/needed_directory
 * git clone https://github.com/axenoy/NoDocker_SecuredProject.git
 * cd NoDocker_SecuredProject
   
-Download nginx
+Download nginx:
 * sudo apt install nginx -y
 * sudo systemctl status nginx
 
-Download node.js and npm
+Download node.js and npm:
 * sudo apt install nodejs npm
 * node -v && npm -v
 
-Download postgre
+Download postgre:
 * "sudo apt install postgresql -y' - PostgreSQL 16 will be installed. 
 * sudo -i -u postgres - Enter to postgre
 * psql - enter to database
 * psql --version - check current version
 
-Download dependencies
+Download dependencies:
 * cd NoDocker_SecuredProject/backend && npm install
 
-Sudo ufw allow 3000
-Exec setup-env.sh 
+Firewall:
+* sudo ufw enable
+* sudo ufw allow 3000
+* sudo ufw staus verbose
+
+Script:
+* chmod +x env-setup.sh
+* sudo ./env-setup.sh
