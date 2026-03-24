@@ -30,7 +30,7 @@ fi
 # Deploy audit scripts to /usr/local/bin for global access.
 # Note: Ensure you are running this from the directory containing the .sh files.
 echo "Installing audit scripts to $SCRIPT_DEST"
-scripts=("nginx-check.sh" "postgre-check.sh" "node-check.sh" "server-check.sh")
+scripts=("nginx-check.sh" "postgre-check.sh" "node-check.sh" "system-check.sh")
 
 for script in "${scripts[@]}"; do
     if [ -f "$script" ]; then
