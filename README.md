@@ -22,11 +22,10 @@ Some files are included for demonstration purposes and should not be present in 
     * 2.1 Ensure no availability to admin address for 3rd faces.
 3. Nginx configuration and reusable snippets in /nginx/snippets/
 4. Development of four 'check scripts' - a custom shell script for security risk assessment.
-5. Monitoring using Prometheus and Graphana(integrating Node Exporter and Nginx VTS Exporter).
-6. Systemd configure via custom unit files. 
-    * 6.1 Auto-restart policies for various failure cases.
-    * 6.2 Setting resource limits and depends.
-7. Setup-script.
+5. Systemd configure via custom unit files. 
+    * 5.1 Auto-restart policies for various failure cases.
+    * 5.2 Setting resource limits and depends.
+6. Setup guide and scripts.
 
 ### Nginx configuration plan:
 1. Use 'include' directive, for granular location management.

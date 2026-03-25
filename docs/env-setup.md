@@ -1,5 +1,5 @@
 # Attention: 
-Execute 'env-setup.sh' in directory with another project scripts. Otherwise files wont be found.
+Execute 'env-setup.sh' in ./scripts directory. Otherwise scripts wont be found.
 
 # Environment setup and automation guide
 This documentation outlines the process of configuring the environment variables, directory structures and security audit tools for the project. 
